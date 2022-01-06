@@ -17,13 +17,12 @@ export default function NewTopicForm() {
     if (name.length === 0) {
       return;
     }
-    const id = uuidv4();
     
-    dispatch.addTopic({
-      id: id,
+    dispatch(addTopic({
+      id: uuidv4(),
       name: e.target.value,
-      
-    })
+      icon: icon
+    }))
     // dispatch your add topic action here
     history.push(ROUTES.topicsRoute());
   };
