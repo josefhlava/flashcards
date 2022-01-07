@@ -24,7 +24,6 @@ export default function NewTopicForm() {
       icon: icon
     }))
 
-    console.log(name)
     // dispatch your add topic action here
     history.push(ROUTES.topicsRoute());
   };
